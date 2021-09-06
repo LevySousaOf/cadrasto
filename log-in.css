@@ -1,0 +1,104 @@
+/*reseta padrao da web*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.corpo{
+  padding: 30px;
+  display: block;
+}
+.img{
+  margin-top: -15px;
+  margin-left: 15px; 
+  float: right;
+}
+.redes{
+  display: inline;
+  color: white;
+}
+body{
+  width: 100%;
+  background: powderblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*titulo*/
+.box h1{
+ padding:40px 0px 20px 0px; 
+  color: white;
+  text-align: center;
+}
+/*corpo do login*/
+.box{
+  scrollbar-width: 10px;
+  border-radius: 10px;
+  height: 350px;
+  width: 300px;
+  background-image: linear-gradient(45deg, rgba(135,206,235,1),rgba(0,0,255,.7));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.input{
+}
+/*barra de pesquisa*/
+.inputuser{
+  color: white;
+  padding-top: 0px;
+  width: 90%;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 0px 10px 7px;
+  background: none;
+  outline: none;
+}
+/*muda cor da bordar da barra de pesquisa*/
+.inputuser:hover{
+  border: 1px solid black;
+}
+.inputuser::placeholder{
+  color: white;
+}
+.submit{
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 8px;
+  color: white;
+  background: rgba(0,0,255,1);
+  outline: none;
+  border: none;
+}
+.box p{
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+.enter{
+  background: rgba(0,0,0,.7);
+  width: 422px;
+  padding: 20px 0px 32px 0px;
+  margin-left: -110px;
+  position: absolute;
+  top: 600px;
+  left: 110px;
+}
+.enter p{
+    /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+  margin-top: 8px;
+  text-align: center;
+}
